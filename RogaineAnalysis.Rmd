@@ -54,7 +54,7 @@ Bar Chart
 ```{r}
 ggplot(NightRogaine, aes(x= Pl, y=Score, fill=Lodge)) +
   geom_bar(stat = "identity") +
-  labs(x = "Team Position", y = "Score", title = "Team Scores by Overall Position - Day Rogaine") +
+  labs(x = "Team Position", y = "Score", title = "Team Scores by Overall Position - Night Rogaine") +
   geom_hline(yintercept = 800) +
   annotate("text", x = 40, y = 850, label = "Div 1-3 Qualify") +
   geom_hline(yintercept = 650) +
