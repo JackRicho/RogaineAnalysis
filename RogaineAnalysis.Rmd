@@ -14,11 +14,7 @@ DayRogaine <- read_csv('raw_data/DayRogaineResults.csv')
 NightRogaine <- read_csv('raw_data/NightRogaineResults.csv')
 ```
 
-Data is clean enough for use
-
-# Day Rogaine
-
-## Score Distribution
+## Day Rogaine
 
 Histogram
 
@@ -42,9 +38,8 @@ ggplot(DayRogaine, aes(x= Pl, y=Score, fill=Lodge)) +
 # stat = "identity" argument tells ggplot2 to use the values in the "Score" column directly as the heights of the bars
 
 ```
-# Night Rogaine
 
-## Score Distribution
+## Night Rogaine
 
 Histogram
 
@@ -68,4 +63,3 @@ ggplot(NightRogaine, aes(x= Pl, y=Score, fill=Lodge)) +
 # stat = "identity" argument tells ggplot2 to use the values in the "Score" column directly as the heights of the bars
 
 ```
-
