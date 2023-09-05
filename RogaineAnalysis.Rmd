@@ -30,10 +30,14 @@ Bar Chart
 ggplot(DayRogaine, aes(x= Pl, y=Score, fill=Lodge)) +
   geom_bar(stat = "identity") +
   labs(x = "Team Position", y = "Score", title = "Team Scores by Overall Position - Day Rogaine") +
-  geom_hline(yintercept = 1050) +
-  annotate("text", x = 40, y = 1100, label = "Div 1-3 Qualify") +
-  geom_hline(yintercept = 800) +
-  annotate("text", x = 40, y = 850, label = "Div 4-7 Qualify")
+  geom_hline(yintercept = 750) +
+  annotate("text", x = 50, y = 800, label = "Revised Div 1-3 Qualify") +
+  geom_hline(yintercept = 450) +
+  annotate("text", x = 50, y = 500, label = "Revised Div 4-7 Qualify") +
+  geom_hline(yintercept = 1050, linetype = 2) +
+  annotate("text", x = 50, y = 1100, label = "Original Div 1-3 Qualify") +
+  geom_hline(yintercept = 850, linetype = 2) +
+  annotate("text", x = 50, y = 900, label = "Original Div 4-7 Qualify")
 
 # stat = "identity" argument tells ggplot2 to use the values in the "Score" column directly as the heights of the bars
 
@@ -55,10 +59,14 @@ Bar Chart
 ggplot(NightRogaine, aes(x= Pl, y=Score, fill=Lodge)) +
   geom_bar(stat = "identity") +
   labs(x = "Team Position", y = "Score", title = "Team Scores by Overall Position - Night Rogaine") +
-  geom_hline(yintercept = 800) +
-  annotate("text", x = 40, y = 850, label = "Div 1-3 Qualify") +
-  geom_hline(yintercept = 650) +
-  annotate("text", x = 40, y = 700, label = "Div 4-7 Qualify")
+  geom_hline(yintercept = 600) +
+  annotate("text", x = 50, y = 580, label = "Revised Div 1-3 Qualify") +
+  geom_hline(yintercept = 350) +
+  annotate("text", x = 50, y = 400, label = "Revised Div 4-7 Qualify") +
+  geom_hline(yintercept = 900, linetype = 2) +
+  annotate("text", x = 50, y = 950, label = "Original Div 1-3 Qualify") +
+  geom_hline(yintercept = 650, linetype = 2) +
+  annotate("text", x = 50, y = 700, label = "Original Div 4-7 Qualify")
 
 # stat = "identity" argument tells ggplot2 to use the values in the "Score" column directly as the heights of the bars
 
